@@ -1,0 +1,13 @@
+{
+  "run_id": "candidate-a",
+  "model": "your-model-and-revision",
+  "precision": "bf16",
+  "workload": {
+    "workload_id": "your-fixed-dataset-and-protocol",
+    "input_tokens": 1024,
+    "output_tokens": 128,
+    "concurrency": 8,
+    "accelerator": "your-accelerator",
+    "accelerator_count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "question": "Choose the highest-throughput candidate satisfying the explicit limits.",
+  "workload": {
+    "workload_id": "your-fixed-dataset-and-protocol",
+    "input_tokens": 1024,
+    "output_tokens": 128,
+    "concurrency": 8,
+    "accelerator": "your-accelerator",
+    "accelerator_count": 1
+  },
+  "limits": {
+    "p95_ttft_ms": 350,
+    "p95_tpot_ms": 25,
+    "max_error_rate": 0.02
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "run_id": "balanced",
+  "model": "demo-model-a",
+  "precision": "bf16",
+  "synthetic": true,
+  "workload": {
+    "workload_id": "synthetic-chat-v1",
+    "input_tokens": 1024,
+    "output_tokens": 128,
+    "concurrency": 8,
+    "accelerator": "synthetic-accelerator",
+    "accelerator_count": 1
+  },
+  "metrics": {
+    "completed": 100,
+    "failed": 0,
+    "p95_ttft_ms": 260,
+    "p95_tpot_ms": 18,
+    "output_tokens_per_second": 900
+  }
+}

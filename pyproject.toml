@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-ai-lab"
+version = "0.1.0"
+description = "A tool-using benchmark analyst with bounded execution and verified decisions"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Hamid Gadirov"}]
+dependencies = ["jsonschema>=4.21,<5"]
+
+[project.scripts]
+agent-lab = "agent_lab.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["agent_lab*"]
+
+[tool.setuptools.package-data]
+agent_lab = ["fixtures/cases.json", "fixtures/runs/*.json", "fixtures/notes/*.md", "fixtures/tasks/*.json"]

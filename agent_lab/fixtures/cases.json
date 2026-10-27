@@ -1,0 +1,17 @@
+[
+  {
+    "task": "interactive",
+    "selected_run_id": "fast",
+    "status": "selected"
+  },
+  {
+    "task": "strict",
+    "selected_run_id": null,
+    "status": "no_eligible_run"
+  },
+  {
+    "task": "unseen",
+    "selected_run_id": null,
+    "status": "no_matching_runs"
+  }
+]

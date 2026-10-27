@@ -1,0 +1,16 @@
+{
+  "question": "Choose the highest-throughput run that meets all interactive latency and error limits.",
+  "workload": {
+    "workload_id": "synthetic-chat-v1",
+    "input_tokens": 1024,
+    "output_tokens": 128,
+    "concurrency": 8,
+    "accelerator": "synthetic-accelerator",
+    "accelerator_count": 1
+  },
+  "limits": {
+    "p95_ttft_ms": 350,
+    "p95_tpot_ms": 25,
+    "max_error_rate": 0.02
+  }
+}
